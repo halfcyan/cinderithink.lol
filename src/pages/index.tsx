@@ -1,7 +1,7 @@
 import * as React from "react"
 import type { HeadFC } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-import Layout from "../components/layout"
+import Layout from "../components/layout-index"
 import Seo from "../components/seo"
 import "../images/quote.jpg"
 
