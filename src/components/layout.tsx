@@ -2,7 +2,13 @@ import * as React from "react"
 import { Link } from "gatsby"
 import "../styles/global.css"
 import Header from "./header"
+import ReactDOM from 'react-dom';
+import {
+  BrowserRouter as Router,
+  Route
+} from 'react-router-dom';
 
+let __PATH_PREFIX__ = "/"
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
   const isRootPath = location.pathname === rootPath
