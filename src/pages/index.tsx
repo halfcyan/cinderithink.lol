@@ -1,30 +1,35 @@
 import * as React from "react"
-
-import Layout from "../components/layout-index"
+import type { HeadFC } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
+import Layout from "../components/layout"
 import Seo from "../components/seo"
+import "../images/quote.jpg"
 
-const IndexPage = () => {
+export function Quote() {
   return (
+    <StaticImage
+      src="../images/quote.jpg"
+      alt="Quote from @cinderithink twitter account saying 'if someone looked at my twitter likes and replies they would (correctly) assume that im extremely mentally ill and have an obsession with fluffy humanoid drawings and will toledo'"
+    />
+  )
+}
+const IndexPage = () => {
+    return (
     <Layout>
       <Seo title="Home" />
       <div>
-        <h1 className="text-4xl flex justify-center text-purple-400">hello</h1>
+        <h1>Sup</h1>
       </div>
       <div>
-        <p className="justify-left flex-auto flex-wrap">
-          This is my first attempt at creating a website.
-        </p>
-        <p className="justify-left flex-auto flex-wrap">
-          If you've stuck around long enough to read this, you might as well check
-          out my <a href="/blog">blog.</a> Thanks!
-        </p>
-        <p className="justify-left flex-auto flex-wrap">
-          I also have a place where I put music and it embeds automatically! Check
-          it out on the <a href="/music">music</a> page!
+        <p>
+          I don't really have any ideas for this website right now so I guess it's just gonna be this for a while lol
         </p>
       </div>
+      <Quote />
     </Layout>
   )
 }
 
 export default IndexPage
+
+export const Head: HeadFC = () => <title>Home Page</title>
