@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `halfcyan's blog`,
+    title: `cinder's reviews`,
     author: {
-      name: `halfcyan`,
-      summary: `who is an idiot and decided to learn webdev in 12 days.`,
+      name: `cinderithink`,
+      summary: `who is gay and likes to write reviews`,
     },
     description: `A basic blog to demonstrate any form of competence in web development.`,
-    siteUrl: `https://halfcyan.com`,
+    siteUrl: `https://cinderithink.lol`,
     social: {
-      twitter: `willowithink`,
+      twitter: `cinderithink`,
     },
     menuLinks: [
       {
@@ -16,8 +16,8 @@ module.exports = {
         link:'/'
       },
       {
-        name:'blog',
-        link:'/blog',
+        name:'reviews',
+        link:'/reviews',
       },
     ],
   },

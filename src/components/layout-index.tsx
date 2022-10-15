@@ -30,7 +30,7 @@
              fontSize: `var(--font-sm)`,
            }}
          >
-           © {new Date().getFullYear()} &middot; halfcyan
+           © {new Date().getFullYear()} &middot; cinderithink
          </footer>
        </div>
      </>

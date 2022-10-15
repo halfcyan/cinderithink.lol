@@ -1,29 +1,24 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import "../styles/global.css"
-import Header from "./header"
-import ReactDOM from 'react-dom';
-import {
-  BrowserRouter as Router,
-  Route
-} from 'react-router-dom';
 
 let __PATH_PREFIX__ = "/"
 const Layout = ({ location, title, children }) => {
-  const rootPath = `${__PATH_PREFIX__}/`
+  const rootPath = `${__PATH_PREFIX__}/reviews`
   const isRootPath = location.pathname === rootPath
   let header
 
   if (isRootPath) {
     header = (
       <h1 className="main-heading">
-        <Link to="/">{title}</Link>
-        <Header />
+        <Link to="/reviews">{title}</Link>
       </h1>
     )
   } else {
     header = (
-      <Header />
+      <Link className="header-link-home" to="/">
+        {title}
+      </Link>
     )
   }
 
@@ -32,9 +27,7 @@ const Layout = ({ location, title, children }) => {
       <header className="global-header">{header}</header>
       <main>{children}</main>
       <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.com">Gatsby</a>
+        © {new Date().getFullYear()} &middot; cinderithink
       </footer>
     </div>
   )
