@@ -29,7 +29,7 @@
   },
   "devDependencies": {
     "@types/node": "^18.11.7",
-    "@types/react": "^18.0.21",
+    "@types/react": "^18.0.24",
     "@types/react-dom": "^18.0.7",
     "autoprefixer": "^10.4.12",
     "gatsby-plugin-image": "^2.24.0",
