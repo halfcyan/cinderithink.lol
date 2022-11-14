@@ -27,7 +27,7 @@ const Layout = ({ location, title, children }) => {
       <header className="global-header">{header}</header>
       <main>{children}</main>
       <footer>
-        © {new Date().getFullYear()} &middot; cinderithink
+        © {new Date().getFullYear()} &middot; cinderithink &middot; <a href="https://github.com/halfcyan">My GitHub</a> &middot; Built with Gatsby 
       </footer>
     </div>
   )

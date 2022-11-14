@@ -30,7 +30,7 @@
              fontSize: `var(--font-sm)`,
            }}
          >
-           © {new Date().getFullYear()} &middot; cinderithink
+           © {new Date().getFullYear()} &middot; cinderithink &middot; <a href="https://github.com/halfcyan">GitHub</a> &middot; <a href="https://t.me/cinderithink">Telegram</a> &middot; Built with Gatsby 
          </footer>
        </div>
      </>
