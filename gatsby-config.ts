@@ -12,17 +12,25 @@ module.exports = {
     },
     menuLinks: [
       {
-        name:'home',
-        link:'/'
+        name: "home",
+        link: "/",
       },
       {
-        name:'reviews',
-        link:'/reviews',
+        name: "reviews",
+        link: "/reviews",
       },
     ],
   },
   plugins: [
-    'gatsby-plugin-postcss',
+    {
+      resolve: "@sentry/gatsby",
+      options: {
+        dsn: "https://60f5467106c94ce78eb61a109f5d506d@o4504233156935680.ingest.sentry.io/4504233161261057",
+        tracesSampleRate: 1.0, // Adjust this value in production
+        // Cannot set any non-serializable options
+      },
+    },
+    "gatsby-plugin-postcss",
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
