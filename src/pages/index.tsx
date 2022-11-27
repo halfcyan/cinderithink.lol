@@ -13,10 +13,11 @@ export function Quote() {
     />
   )
 }
+
 const IndexPage = () => {
     return (
     <Layout>
-      <Seo title="Home" />
+      <Seo title="Home" lang={undefined} children={undefined} />
       <div>
         <h1>Sup</h1>
       </div>
