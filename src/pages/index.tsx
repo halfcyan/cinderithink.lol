@@ -15,7 +15,7 @@ export function Quote() {
 }
 
 const IndexPage = () => {
-    return (
+  return (
     <Layout>
       <Seo title="Home" lang={undefined} children={undefined} />
       <div>
@@ -23,7 +23,8 @@ const IndexPage = () => {
       </div>
       <div>
         <p>
-          I don't really have any ideas for this website right now so I guess it's just gonna be this for a while lol
+          I don't really have any ideas for this website right now so I guess
+          it's just gonna be this for a while lol
         </p>
       </div>
       <Quote />

@@ -68,7 +68,9 @@ export default ReviewsIndex
  *
  * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
  */
-export const Head = () => <Seo title="All posts" children={undefined} lang={undefined} />
+export const Head = () => (
+  <Seo title="All posts" children={undefined} lang={undefined} />
+)
 
 export const pageQuery = graphql`
   query {
