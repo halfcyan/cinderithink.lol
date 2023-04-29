@@ -9,17 +9,19 @@ const Header = (_Header: any) => (
     >
       cinderithink
     </a>
+    {/*
     <a
       className="text-2xl right-0 p-3 flex float-right text-white hover:text-purple-400 transition-colors no-underline font-['JetBrains Mono']"
       href="/reviews"
     >
       Reviews
     </a>
+    */}
     <a
       className="text-2xl right-0 p-3 flex float-right text-white hover:text-purple-400 transition-colors no-underline font-['JetBrains Mono']"
-      href="/contact"
+      href="/about"
     >
-      Contact
+      About
     </a>
   </header>
 )
